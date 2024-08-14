@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario:#000000;
+    --color-segundario:#0ed6f5;
+    --color-terciario:#0c5661;
+    --color-cuartiario:#99a4e4;
+    --color-quintuple:#71a7af;
+    --color-sesto:#3d2c4d;
+    --color-septimo:#727272;
+    --color-octavo:#22032b;
+    --color-noveno:#d0d3d4;
+
+    --fuente-Old Standard TT; 'Old Standard TT', serif;
+    --fuente-Edu AU VIC WA NT Hand; 'Edu AU VIC WA NT Hand', cursive;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--color-primario);
+    color: var(--color-noveno);
+    height: 100vh;
+    box-sizing: border-box;
+}
+.header{
+    padding: 2% 0% 0% 9%;
+}
+.Header__menú{
+    display: flex;
+    gap: 60px;
+}
+.header__menú__link{
+    font-family: var(--fuente-Edu);
+    font: size 2rem;
+    font-weight: 600px;
+    color: var(--color-segundario);
+}
+
+.titulo-destaque{
+    color: var(--color-cuartiario);
+}
+.Presentaación{
+    display: flex;
+    align-items: center;
+    padding: 8% 9%;
+    justify-content: space-between;
+}
+.Presentación__Contenido{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 25PX;
+}
+.Presentación__Contenido__titulo{
+    font-size: 1.9rem;
+    font-family: "Allan", serif;
+    text-align: center;
+}
+.Presentación__Contenido__Texto{
+    font-family: var(--fuente-Old);
+    text-align: justify;
+    font-size: 1.6rem;
+}
+.presentación__Enlace{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 08px;
+}
+.presentación__enlaces_link{
+        width: 370;
+        text-align: center;
+        padding: 0.5px 15px;
+        border-radius: 12px;
+        font-family:var(--fuente-Edu);
+        font-size: 1.05rem;
+        font-weight: 800px;
+        text-decoration: none;
+        color: var(--color-segundario);
+        border: 1px solid var(--color-quintuple);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: var(--color-sesto); /* Color de fondo */
+}
+.presentación__enlaces_link:hover{
+    background-color:var(--color-cuartiario);
+}
+.presentaicón__Enlances__Redes__Sociales{
+    font-family: var(--fuente-Old);
+    font-weight: 8px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.small__image{
+    width: 100%;
+    float: left; /* o left para alinearlo a la izquierda */
+    margin: 0 0 20px 20px; /* Añade espacio alrededor de la imagen */
+    max-width: 40%;
+}
+
+.footer{
+    background-color:var(--color-terciario);
+    padding: 02px;
+    text-align: right;
+    font-family:var(--fuente-Old);
+    color:var(--color-octavo);
+    font-size: 12px;
+}
+.text-column {
+    display: flex;
+    flex-direction: column; /* Coloca el texto en columna */
+  }
+@media (max-width: 723px){
+
+    .header{
+        padding: 10%;
+    }
+    .Header__menú{
+        justify-content: center;
+    }
+
+    .Presentaación{
+        flex-direction: column-reverse;
+        display: flex;
+        padding: 6%;
+    }
+    .Presentación__Contenido{
+        width: auto;  /* para centralizar el texto, en colomna ajustandose al responsive*/
+    }
+}
